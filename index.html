@@ -1,16 +1,67 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Soft Fox</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
 
-layout: home
-title: SoftFox
----
-<!DOCTYPE html>
-<html lang="en">
-  <head><title>{{ page.title }}</title>
-</head>
-<body>
-  
-</body>
-<h1> What is happening here? </h1>
+    <body style="background-color: #ffffff;">
+    	<div class="container-fluid">
+    		<div class="col-md-12 col-xs-12" style="height: 200px;">
+
+        </div>
+    </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+<script>
+var i = 0;
+var txt = 'B_CINEMA';
+var speed = 150;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("bcinema").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+    }
+  if (i == txt.length) {
+    document.getElementById("aug").style.display = "block";
+
+  }
+
+if (document.getElementById("aug").style.display == "block") {
+    document.getElementById("sep").style.display = "block";
+
+}
+if (document.getElementById("sep").style.display == "block") {
+    document.getElementById("oct").style.display = "block";
+
+}
+if (document.getElementById("oct").style.display == "block") {
+    document.getElementById("nov").style.display = "block";
+
+}
+
+}
+</script>
+<script>
+        $(function() {
+        $('.lazy').lazy({
+          effect: "fadeIn",
+          effectTime: "slow",
+          threshold: 0
+        });
+    });
+             
+</script>
+
+
 </html>
